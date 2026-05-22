@@ -17,12 +17,12 @@ services:
       JARVIS_API: ${JARVIS_API}
       CHECK_INTERVAL: ${CHECK_INTERVAL}
       AUTO_RESOLVE_INTERVAL: ${AUTO_RESOLVE_INTERVAL}
-      MONITOR_CONTAINERS: ${MONITOR_CONTAINERS}               
+      MONITOR_CONTAINERS: ${MONITOR_CONTAINERS}
       MONITOR_URLS: ${MONITOR_URLS}
       SOURCE_NAME: ${SOURCE_NAME}
       ALERT_TIMEOUT: ${ALERT_TIMEOUT}
     
-    volumes:               
+    volumes:
       # Mount Docker socket to monitor containers
       # READ-ONLY for security
       - /var/run/docker.sock:/var/run/docker.sock:ro
